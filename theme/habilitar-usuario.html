@@ -7,6 +7,14 @@
  // GITHUB: https://github.com/themefisher/
 -->
 
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -28,13 +36,6 @@
 
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
-
-    <link href="plugins/prism/prism.css" rel="stylesheet" />
-
-    <link
-      href="plugins/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css"
-      rel="stylesheet"
-    />
 
     <!-- MONO CSS -->
     <link id="main-css-href" rel="stylesheet" href="css/style.css" />
@@ -99,7 +100,11 @@
                   <span class="nav-text">Reportes/Estadísticas</span>
                   <b class="caret"></b>
                 </a>
-                <ul class="collapse" id="email" data-parent="#sidebar-menu">
+                <ul
+                  class="collapse show"
+                  id="email"
+                  data-parent="#sidebar-menu"
+                >
                   <div class="sub-menu">
                     <li>
                       <a class="sidenav-item-link" href="analytics.html">
@@ -125,9 +130,9 @@
                 </ul>
 
                 <!-- <a class="sidenav-item-link" href="analytics.html">
-                          <i class="mdi mdi-chart-line"></i>
-                          <span class="nav-text">Reportes/Estadísticas</span>
-                        </a> -->
+                      <i class="mdi mdi-chart-line"></i>
+                      <span class="nav-text">Reportes/Estadísticas</span>
+                    </a> -->
               </li>
               <li class="has-sub active">
                 <a
@@ -148,7 +153,7 @@
                   data-parent="#sidebar-menu"
                 >
                   <div class="sub-menu">
-                    <li class="">
+                    <li>
                       <a
                         class="sidenav-item-link"
                         href="validacion-usuarios.html"
@@ -157,9 +162,18 @@
                       </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                       <a class="sidenav-item-link" href="validacion-os.html">
                         <span class="nav-text">Organizaciones Sindicales</span>
+                      </a>
+                    </li>
+
+                    <li class="active">
+                      <a
+                        class="sidenav-item-link"
+                        href="habilitacion-usuarios.html"
+                      >
+                        <span class="nav-text">Habilitación de Usuario</span>
                       </a>
                     </li>
                   </div>
@@ -202,7 +216,7 @@
               <span class="sr-only">Toggle navigation</span>
             </button>
 
-            <span class="page-title">Validacion de Organizacion</span>
+            <span class="page-title">Habilitar usuario</span>
 
             <div class="navbar-right">
               <!-- search form -->
@@ -676,233 +690,314 @@
         ===================================== -->
         <div class="content-wrapper">
           <div class="content">
-            <!-- For Components documentaion -->
-
-            <!-- Dirigentes -->
-            <div class="card card-default">
-              <div class="card-header">
-                <h2>Organizaciones</h2>
-                <!-- 
-                <a
-                  class="btn mdi mdi-code-tags"
-                  data-toggle="collapse"
-                  href="#collapse-data-tables"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse-data-tables"
-                >
-                </a> -->
-                <button
-                  type="button"
-                  class="btn btn-success"
-                  id="btn-download-excel"
-                >
-                  <i class="mdi mdi-file-excel mr-1"></i>
-                  Descargar
-                </button>
+            <!-- Card Profile -->
+            <div class="card card-default card-profile">
+              <div class="card-body card-profile-body">
+                <div class="">
+                  <img
+                    class="rounded-circle"
+                    src="images/user/user-md-01.jpg"
+                    alt="Avata Image"
+                  />
+                  <a class="h5 d-block mt-3 mb-2" href="#">Fernando Espinoza</a>
+                  <a class="d-block text-color" href="#">feres@example.com</a>
+                </div>
+                <div class="d-flex flex-column">
+                  <h5>Detalle:</h5>
+                  <br />
+                  <div>
+                    <span class="h6">Nombres: </span
+                    ><span>Fernando Julian</span>
+                  </div>
+                  <div>
+                    <span class="h6">Apellidos: </span
+                    ><span>Espinoza Quiroga</span>
+                  </div>
+                  <div>
+                    <span class="h6">Cedula de Identidad: </span
+                    ><span>8723432LP</span>
+                  </div>
+                  <div>
+                    <span class="h6">Celular: </span><span>77234321</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column" style="margin-left: -10rem">
+                  <br />
+                  <br />
+                  <div>
+                    <span class="h6">Organizacion Sindical: </span
+                    ><span>Sindicato de transporte pesado Eduardo Avaroa</span>
+                  </div>
+                  <div>
+                    <span class="h6">Jefatura departamental: </span
+                    ><span>Chuquisaca</span>
+                  </div>
+                </div>
               </div>
-              <div class="card-body">
-                <table
-                  id="productsTable"
-                  class="table table-hover table-product"
-                  style="width: 100%"
-                >
-                  <thead>
-                    <tr>
-                      <th>Organizacion</th>
-                      <th>Sigla</th>
-                      <th>Tipo de organizacion</th>
-                      <th>Ambito</th>
-                      <th>Sector</th>
-                      <th>Ente Matriz</th>
-                      <th>Fecha Registro</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
+            </div>
 
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h2 class="mb-5">Formulario de validación</h2>
+                  </div>
+
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="occupation"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Nombres:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="occupation"
+                            value="Fernando Julian"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="occupation"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Apellidos:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="occupation"
+                            value="Espinoza Quiroga"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="occupation"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Cedular de Identidad:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="occupation"
+                            value="8723432LP"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="occupation"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Celular:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="occupation"
+                            value="77234321"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="occupation"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Organizacion sindical:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="occupation"
+                            value="Sindicato de transporte pesado Eduardo Avaroa"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group mb-4">
+                        <label class="text-dark font-weight-medium"
+                          >Jefatura departamental:</label
+                        >
+                        <div class="form-group">
+                          <select class="country form-control">
+                            <option value="AL">La Paz</option>
+                            <option value="NY">Cochabamba</option>
+                            <option value="VR" selected>Chuquisaca</option>
+                            <option value="WA">Potosi</option>
+                            <option value="CA">Santa Cruz</option>
+                            <option value="WY">...</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="coverImage"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Carnet:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <div class="custom-file mb-1">
+                            <input
+                              type="file"
+                              class="custom-file-input"
+                              id="coverImage"
+                              required
+                            />
+                            <label class="custom-file-label" for="coverImage"
+                              >Elegir desde el ordenador...</label
                             >
+                            <div class="invalid-feedback">
+                              Example invalid custom file feedback
+                            </div>
+                          </div>
+                          <span class="d-block"
+                            >Por favor subir su carnet escaneado
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group row mb-6">
+                        <label
+                          for="coverImage"
+                          class="col-sm-4 col-lg-2 col-form-label"
+                          >Acta Poder:</label
+                        >
+                        <div class="col-sm-8 col-lg-10">
+                          <div class="custom-file mb-1">
+                            <input
+                              type="file"
+                              class="custom-file-input"
+                              id="coverImage"
+                              required
+                            />
+                            <label class="custom-file-label" for="coverImage"
+                              >Elegir desde el ordenador...</label
+                            >
+                            <div class="invalid-feedback">
+                              Example invalid custom file feedback
+                            </div>
+                          </div>
+                          <span class="d-block"
+                            >Por favor subir el acta poder escaneado
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          type="submit"
+                          class="btn btn-primary mb-2 btn-pill"
+                        >
+                          Habilitar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h2>Redes sociales</h2>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="media media-sm">
+                      <div class="media-body">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="d-flex mb-5">
+                              <button
+                                type="button"
+                                class="btn btn-icon facebook mr-2"
+                              >
+                                <i class="mdi mdi-facebook"></i>
+                              </button>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Usuario de Facebook"
+                              />
+                            </div>
+
+                            <div class="d-flex mb-5">
+                              <button
+                                type="button"
+                                class="btn btn-icon google-plus mr-2"
+                              >
+                                <i class="mdi mdi-google-plus"></i>
+                              </button>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Usuario Google plus"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="d-flex mb-5">
+                              <button
+                                type="button"
+                                class="btn btn-icon twitter mr-2"
+                              >
+                                <i class="mdi mdi-twitter"></i>
+                              </button>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Usuario Twitter"
+                              />
+                            </div>
+
+                            <div class="d-flex mb-5">
+                              <button
+                                type="button"
+                                class="btn btn-icon linkedin mr-2"
+                              >
+                                <i class="mdi mdi-linkedin"></i>
+                              </button>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Usuario Linkedin"
+                              />
+                            </div>
                           </div>
                         </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Footer -->
+        <footer class="footer mt-auto">
+          <div class="copyright bg-white">
+            <p>
+              &copy; <span id="copy-year"></span> Copyright Mono Dashboard
+              Bootstrap Template by
+              <a
+                class="text-primary"
+                href="http://www.iamabdus.com/"
+                target="_blank"
+                >Abdus</a
+              >.
+            </p>
+          </div>
+          <script>
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("copy-year").innerHTML = year;
+          </script>
+        </footer>
       </div>
     </div>
 
@@ -1015,12 +1110,6 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="plugins/simplebar/simplebar.min.js"></script>
     <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
-
-    <script src="plugins/prism/prism.js"></script>
-
-    <script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-
-    <script src="plugins/apexcharts/apexcharts.js"></script>
 
     <script src="js/mono.js"></script>
     <script src="js/chart.js"></script>

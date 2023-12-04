@@ -29,13 +29,6 @@
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
 
-    <link href="plugins/prism/prism.css" rel="stylesheet" />
-
-    <link
-      href="plugins/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css"
-      rel="stylesheet"
-    />
-
     <!-- MONO CSS -->
     <link id="main-css-href" rel="stylesheet" href="css/style.css" />
 
@@ -125,9 +118,9 @@
                 </ul>
 
                 <!-- <a class="sidenav-item-link" href="analytics.html">
-                          <i class="mdi mdi-chart-line"></i>
-                          <span class="nav-text">Reportes/Estadísticas</span>
-                        </a> -->
+                            <i class="mdi mdi-chart-line"></i>
+                            <span class="nav-text">Reportes/Estadísticas</span>
+                          </a> -->
               </li>
               <li class="has-sub active">
                 <a
@@ -202,7 +195,7 @@
               <span class="sr-only">Toggle navigation</span>
             </button>
 
-            <span class="page-title">Validacion de Organizacion</span>
+            <span class="page-title"></span>
 
             <div class="navbar-right">
               <!-- search form -->
@@ -676,233 +669,152 @@
         ===================================== -->
         <div class="content-wrapper">
           <div class="content">
-            <!-- For Components documentaion -->
+            <div
+              class="invoice-wrapper rounded border bg-white py-5 px-3 px-md-4 px-lg-5 mb-6"
+            >
+              <div class="d-flex justify-content-between">
+                <h2 class="text-dark font-weight-medium">CODIGO #264648</h2>
+                <div class="btn-group">
+                  <button class="btn btn-sm btn-light">
+                    <i class="mdi mdi-content-save"></i> guardar
+                  </button>
+                  <button class="btn btn-sm btn-info">
+                    <i class="mdi mdi-printer"></i> Imprimir Certificación
+                  </button>
+                </div>
+              </div>
+              <div class="row pt-5">
+                <div class="col-xl-3 col-lg-4">
+                  <p class="text-dark mb-2">Dirigente:</p>
+                  <div>
+                    <span class="text-dark">Nombre: </span>Rodrigo Fernando
+                  </div>
+                  <div>
+                    <span class="text-dark">Apellidos: </span>Mamani Quispe
+                  </div>
+                  <div><span class="text-dark">CI: </span>8273412LP</div>
+                  <div><span class="text-dark">Celular: </span>72834324</div>
+                  <div>
+                    <span class="text-dark">Correo: </span>rfmq@gmail.com
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                  <p class="text-dark mb-2">Organización sindical:</p>
+                  <address>
+                    Trans. Eduardo Avaroa
+                    <br />
+                    58 Jamie Ways, North Faye, Q5 5ZP <br />
+                    Email: example@gmail.com <br />
+                    Phone: +91 5264 521 943
+                  </address>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                  <p class="text-dark mb-2">Vigencia</p>
+                  <div><span class="text-dark">Desde: </span>10/10/2020</div>
+                  <div><span class="text-dark">Hasta: </span>10/10/2022</div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                  <p class="text-dark mb-2"></p>
+                  <div>
+                    <span class="text-dark">Fecha de Legalizacion: </span
+                    >10/10/2020
+                  </div>
+                  <div>
+                    <span class="text-dark">Jefatura departamental: </span
+                    >Chuquisaca
+                  </div>
+                </div>
+              </div>
+              <br />
+              <h4 class="text-dark font-weight-medium">Documentos:</h4>
+              <div>
+                <p class="pt-4">
+                  <i class="fa fa-paperclip ml-2"></i>
+                  <span class="text-dark">4 Adjuntos</span>
+                </p>
+                <div
+                  class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center cursor-pointer"
+                  >
+                    <i class="mdi mdi-file-pdf" style="font-size: 8rem"></i>
+                    <span>Acta Poder 1</span>
+                  </div>
+                </div>
+                <div
+                  class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center cursor-pointer"
+                  >
+                    <i class="mdi mdi-file-pdf" style="font-size: 8rem"></i>
+                    <span>Acta Poder 2</span>
+                  </div>
+                </div>
+                <div
+                  class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center cursor-pointer"
+                  >
+                    <i class="mdi mdi-file-pdf" style="font-size: 8rem"></i>
+                    <span>Acta Poder 3</span>
+                  </div>
+                </div>
+                <div
+                  class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center cursor-pointer"
+                  >
+                    <i class="mdi mdi-file-pdf" style="font-size: 8rem"></i>
+                    <span>Acta Poder 4</span>
+                  </div>
+                </div>
+              </div>
 
-            <!-- Dirigentes -->
-            <div class="card card-default">
-              <div class="card-header">
-                <h2>Organizaciones</h2>
-                <!-- 
-                <a
-                  class="btn mdi mdi-code-tags"
-                  data-toggle="collapse"
-                  href="#collapse-data-tables"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse-data-tables"
-                >
-                </a> -->
-                <button
-                  type="button"
-                  class="btn btn-success"
-                  id="btn-download-excel"
-                >
-                  <i class="mdi mdi-file-excel mr-1"></i>
-                  Descargar
+              <br />
+              <div class="d-flex flex-row-reverse flex-1">
+                <button class="btn btn-sm btn-info">
+                  <i class="mdi mdi-pencil"></i> Editar
                 </button>
               </div>
-              <div class="card-body">
-                <table
-                  id="productsTable"
-                  class="table table-hover table-product"
-                  style="width: 100%"
-                >
-                  <thead>
-                    <tr>
-                      <th>Organizacion</th>
-                      <th>Sigla</th>
-                      <th>Tipo de organizacion</th>
-                      <th>Ambito</th>
-                      <th>Sector</th>
-                      <th>Ente Matriz</th>
-                      <th>Fecha Registro</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
 
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
-                      <td>
-                        <div class="dropdown">
-                          <a
-                            class="dropdown-toggle icon-burger-mini"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            data-display="static"
-                          >
-                          </a>
-
-                          <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <!-- <div class="row justify-content-end">
+                <div class="col-lg-5 col-xl-4 col-xl-3 ml-sm-auto">
+                  <a
+                    href="#"
+                    class="btn btn-block mt-2 btn-lg btn-primary btn-pill"
+                  >
+                    Procced to Payment</a
+                  >
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
 
         <!-- Footer -->
+        <footer class="footer mt-auto">
+          <div class="copyright bg-white">
+            <p>
+              &copy; <span id="copy-year"></span> Copyright Mono Dashboard
+              Bootstrap Template by
+              <a
+                class="text-primary"
+                href="http://www.iamabdus.com/"
+                target="_blank"
+                >Abdus</a
+              >.
+            </p>
+          </div>
+          <script>
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("copy-year").innerHTML = year;
+          </script>
+        </footer>
       </div>
     </div>
 
@@ -1015,12 +927,6 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="plugins/simplebar/simplebar.min.js"></script>
     <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
-
-    <script src="plugins/prism/prism.js"></script>
-
-    <script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-
-    <script src="plugins/apexcharts/apexcharts.js"></script>
 
     <script src="js/mono.js"></script>
     <script src="js/chart.js"></script>

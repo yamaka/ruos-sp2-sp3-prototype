@@ -86,7 +86,7 @@
                 </a>
               </li>
 
-              <li class="has-sub">
+              <li class="has-sub active">
                 <a
                   class="sidenav-item-link"
                   href="javascript:void(0)"
@@ -99,15 +99,19 @@
                   <span class="nav-text">Reportes/Estadísticas</span>
                   <b class="caret"></b>
                 </a>
-                <ul class="collapse" id="email" data-parent="#sidebar-menu">
+                <ul
+                  class="collapse show"
+                  id="email"
+                  data-parent="#sidebar-menu"
+                >
                   <div class="sub-menu">
-                    <li>
+                    <li class="">
                       <a class="sidenav-item-link" href="analytics.html">
                         <span class="nav-text">Dashboard</span>
                       </a>
                     </li>
 
-                    <li class="">
+                    <li>
                       <a
                         class="sidenav-item-link"
                         href="reporte-dirigencial.html"
@@ -121,15 +125,19 @@
                         <span class="nav-text">Reporte Por Sectores</span>
                       </a>
                     </li>
+                    <li class="active">
+                      <a class="sidenav-item-link" href="historico-os.html">
+                        <span class="nav-text">Historico por OS</span>
+                      </a>
+                    </li>
                   </div>
                 </ul>
-
                 <!-- <a class="sidenav-item-link" href="analytics.html">
-                          <i class="mdi mdi-chart-line"></i>
-                          <span class="nav-text">Reportes/Estadísticas</span>
-                        </a> -->
+                      <i class="mdi mdi-chart-line"></i>
+                      <span class="nav-text">Reportes/Estadísticas</span>
+                    </a> -->
               </li>
-              <li class="has-sub active">
+              <li class="has-sub">
                 <a
                   class="sidenav-item-link"
                   href="javascript:void(0)"
@@ -143,12 +151,12 @@
                   <b class="caret"></b>
                 </a>
                 <ul
-                  class="collapse show"
+                  class="collapse"
                   id="validations"
                   data-parent="#sidebar-menu"
                 >
                   <div class="sub-menu">
-                    <li class="">
+                    <li>
                       <a
                         class="sidenav-item-link"
                         href="validacion-usuarios.html"
@@ -157,13 +165,27 @@
                       </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                       <a class="sidenav-item-link" href="validacion-os.html">
                         <span class="nav-text">Organizaciones Sindicales</span>
                       </a>
                     </li>
+                    <li>
+                      <a
+                        class="sidenav-item-link"
+                        href="habilitacion-usuarios.html"
+                      >
+                        <span class="nav-text">Habilitación de Usuario</span>
+                      </a>
+                    </li>
                   </div>
                 </ul>
+              </li>
+              <li>
+                <a class="sidenav-item-link" href="legalizaciones.html">
+                  <i class="mdi mdi-briefcase-account-outline"></i>
+                  <span class="nav-text">Legalizaciones</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -202,7 +224,7 @@
               <span class="sr-only">Toggle navigation</span>
             </button>
 
-            <span class="page-title">Validacion de Organizacion</span>
+            <span class="page-title">Historico por Organizacion Sindical</span>
 
             <div class="navbar-right">
               <!-- search form -->
@@ -678,26 +700,72 @@
           <div class="content">
             <!-- For Components documentaion -->
 
-            <!-- Dirigentes -->
+            <!-- Products Inventory -->
             <div class="card card-default">
               <div class="card-header">
-                <h2>Organizaciones</h2>
-                <!-- 
-                <a
-                  class="btn mdi mdi-code-tags"
-                  data-toggle="collapse"
-                  href="#collapse-data-tables"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse-data-tables"
-                >
-                </a> -->
+                <h2>Tramites</h2>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle border rounded-pill bg-white"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Organización Sindical
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                    x-placement="bottom-start"
+                    style="
+                      position: absolute;
+                      transform: translate3d(0px, 40px, 0px);
+                      top: 0px;
+                      left: 0px;
+                      will-change: transform;
+                    "
+                  >
+                    <a class="dropdown-item" href="#">Organización 1</a>
+                    <a class="dropdown-item" href="#">Organización 2</a>
+                    <a class="dropdown-item" href="#">Organización 3 </a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle border rounded-pill bg-white"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Tipo tramite
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                    x-placement="bottom-start"
+                    style="
+                      position: absolute;
+                      transform: translate3d(0px, 40px, 0px);
+                      top: 0px;
+                      left: 0px;
+                      will-change: transform;
+                    "
+                  >
+                    <a class="dropdown-item" href="#">Tipo 1</a>
+                    <a class="dropdown-item" href="#">Tipo 2</a>
+                    <a class="dropdown-item" href="#">Tipo 3 </a>
+                  </div>
+                </div>
                 <button
                   type="button"
-                  class="btn btn-success"
-                  id="btn-download-excel"
+                  class="btn btn-info"
+                  id="btn-download-pdf"
                 >
-                  <i class="mdi mdi-file-excel mr-1"></i>
+                  <i class="mdi mdi-file-pdf mr-1"></i>
                   Descargar
                 </button>
               </div>
@@ -709,25 +777,23 @@
                 >
                   <thead>
                     <tr>
-                      <th>Organizacion</th>
-                      <th>Sigla</th>
-                      <th>Tipo de organizacion</th>
-                      <th>Ambito</th>
-                      <th>Sector</th>
-                      <th>Ente Matriz</th>
-                      <th>Fecha Registro</th>
+                      <th></th>
+                      <th>Organizacion Sindical</th>
+                      <th>Tipo</th>
+                      <th>Responsable</th>
+                      <th>Estado</th>
+                      <th>Fecha de registro</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td></td>
+                      <td>Organizacion 1</td>
+                      <td>Reconocimiento de personeria</td>
+                      <td>Fernando Espinoza</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -746,23 +812,22 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td></td>
+                      <td>Organizacion 1</td>
+                      <td>Reconocimiento de personeria</td>
+                      <td>Fernando Espinoza</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -781,23 +846,22 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td></td>
+                      <td>Organizacion 2</td>
+                      <td>Cambio razon social</td>
+                      <td>Juan Perez</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -816,23 +880,22 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td></td>
+                      <td>Organizacion 3</td>
+                      <td>Reconocimiento de directorio</td>
+                      <td>Luis Mancilla</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -851,23 +914,24 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td></td>
+                      <td>Organizacion 4</td>
+                      <td>
+                        Modificacion de resolucion reconomiento de directorio
+                      </td>
+                      <td>Fernando Espinoza</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -886,10 +950,78 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Organizacion 5</td>
+                      <td>Ampliacion de mandato</td>
+                      <td>Fernando Espinoza</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="dropdown-toggle icon-burger-mini"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-display="static"
+                          >
+                          </a>
+
+                          <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Organizacion 1</td>
+                      <td>Reconocimiento de personeria</td>
+                      <td>Fernando Espinoza</td>
+                      <td>En proceso</td>
+                      <td>22/07/2020</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="dropdown-toggle icon-burger-mini"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-display="static"
+                          >
+                          </a>
+
+                          <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
                           </div>
                         </div>

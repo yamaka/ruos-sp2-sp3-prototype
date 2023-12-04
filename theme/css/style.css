@@ -17130,4 +17130,8 @@ html[dir=rtl] .sidebar li > a .caret:before {
 .copyright p {
   font-weight: 500;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

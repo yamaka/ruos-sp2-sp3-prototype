@@ -101,13 +101,13 @@
                 </a>
                 <ul class="collapse" id="email" data-parent="#sidebar-menu">
                   <div class="sub-menu">
-                    <li>
+                    <li class="active">
                       <a class="sidenav-item-link" href="analytics.html">
                         <span class="nav-text">Dashboard</span>
                       </a>
                     </li>
 
-                    <li class="">
+                    <li>
                       <a
                         class="sidenav-item-link"
                         href="reporte-dirigencial.html"
@@ -123,13 +123,12 @@
                     </li>
                   </div>
                 </ul>
-
                 <!-- <a class="sidenav-item-link" href="analytics.html">
-                          <i class="mdi mdi-chart-line"></i>
-                          <span class="nav-text">Reportes/Estadísticas</span>
-                        </a> -->
+                      <i class="mdi mdi-chart-line"></i>
+                      <span class="nav-text">Reportes/Estadísticas</span>
+                    </a> -->
               </li>
-              <li class="has-sub active">
+              <li class="has-sub">
                 <a
                   class="sidenav-item-link"
                   href="javascript:void(0)"
@@ -143,12 +142,12 @@
                   <b class="caret"></b>
                 </a>
                 <ul
-                  class="collapse show"
+                  class="collapse"
                   id="validations"
                   data-parent="#sidebar-menu"
                 >
                   <div class="sub-menu">
-                    <li class="">
+                    <li>
                       <a
                         class="sidenav-item-link"
                         href="validacion-usuarios.html"
@@ -157,13 +156,27 @@
                       </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                       <a class="sidenav-item-link" href="validacion-os.html">
                         <span class="nav-text">Organizaciones Sindicales</span>
                       </a>
                     </li>
+                    <li>
+                      <a
+                        class="sidenav-item-link"
+                        href="habilitacion-usuarios.html"
+                      >
+                        <span class="nav-text">Habilitación de Usuario</span>
+                      </a>
+                    </li>
                   </div>
                 </ul>
+              </li>
+              <li class="active">
+                <a class="sidenav-item-link" href="legalizaciones.html">
+                  <i class="mdi mdi-briefcase-account-outline"></i>
+                  <span class="nav-text">Legalizaciones</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -202,7 +215,7 @@
               <span class="sr-only">Toggle navigation</span>
             </button>
 
-            <span class="page-title">Validacion de Organizacion</span>
+            <span class="page-title">Legalización de documentos</span>
 
             <div class="navbar-right">
               <!-- search form -->
@@ -678,27 +691,26 @@
           <div class="content">
             <!-- For Components documentaion -->
 
-            <!-- Dirigentes -->
+            <!-- Products Inventory -->
             <div class="card card-default">
               <div class="card-header">
-                <h2>Organizaciones</h2>
-                <!-- 
-                <a
-                  class="btn mdi mdi-code-tags"
-                  data-toggle="collapse"
-                  href="#collapse-data-tables"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse-data-tables"
-                >
-                </a> -->
+                <h2>Documentos</h2>
                 <button
                   type="button"
-                  class="btn btn-success"
-                  id="btn-download-excel"
+                  class="btn btn-info"
+                  id="btn-download-pdf"
                 >
-                  <i class="mdi mdi-file-excel mr-1"></i>
+                  <i class="mdi mdi-file-pdf mr-1"></i>
                   Descargar
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-info btn-pill"
+                  data-toggle="modal"
+                  data-target="#exampleModalForm"
+                >
+                  <i class="mdi mdi-plus mr-1"></i>
+                  Nuevo
                 </button>
               </div>
               <div class="card-body">
@@ -709,25 +721,25 @@
                 >
                   <thead>
                     <tr>
-                      <th>Organizacion</th>
-                      <th>Sigla</th>
-                      <th>Tipo de organizacion</th>
-                      <th>Ambito</th>
-                      <th>Sector</th>
-                      <th>Ente Matriz</th>
-                      <th>Fecha Registro</th>
+                      <th></th>
+                      <th>Documento</th>
+                      <th>Tipo</th>
+                      <th>Organizacion Sindical</th>
+                      <th>Unidad</th>
+                      <th>Fecha registro</th>
+
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
                       <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -746,23 +758,21 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
                       <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -781,23 +791,21 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
                       <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -816,23 +824,21 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
                       <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -851,23 +857,21 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
                       <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
                       <td>
                         <div class="dropdown">
                           <a
@@ -886,10 +890,107 @@
                             class="dropdown-menu dropdown-menu-right"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <a
-                              class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
+                      <td>Sindicato Eduardo Avaroa</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="dropdown-toggle icon-burger-mini"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-display="static"
+                          >
+                          </a>
+
+                          <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
+                      <td>Sindicato Eduardo Avaroa</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="dropdown-toggle icon-burger-mini"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-display="static"
+                          >
+                          </a>
+
+                          <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Acta xxx</td>
+                      <td>Acta/Poder</td>
+                      <td>Sindicato Eduardo Avaroa</td>
+                      <td>DGAS</td>
+
+                      <td>22/07/2022</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="dropdown-toggle icon-burger-mini"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-display="static"
+                          >
+                          </a>
+
+                          <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a class="dropdown-item" href="legalizacion.html"
+                              >Detalle/Legalizacion</a
                             >
                           </div>
                         </div>
@@ -903,6 +1004,121 @@
         </div>
 
         <!-- Footer -->
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModalForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalFormTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalFormTitle">
+              Crear Legalizacion
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body" style="padding: 1rem 3rem">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Jefatura Departamental:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"
+                  >Fecha de legalizacion de acta:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  value="12/07/2022"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="">Acta escaneada:</label>
+                <div class="">
+                  <div class="custom-file mb-1">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="coverImage"
+                      required
+                    />
+                    <label class="custom-file-label" for="coverImage"
+                      >Elegir desde el ordenador...</label
+                    >
+                    <div class="invalid-feedback">
+                      Example invalid custom file feedback
+                    </div>
+                  </div>
+                  <span class="d-block"
+                    >Por favor subir el acta escaneada
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Codigo Autogenerado por OS:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  value="A-1453"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="">Vigencia:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  value="3 meses"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="">Organizacion Sindical:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger btn-pill"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary btn-pill">
+              Registrar
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 

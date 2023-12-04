@@ -125,9 +125,9 @@
                 </ul>
 
                 <!-- <a class="sidenav-item-link" href="analytics.html">
-                          <i class="mdi mdi-chart-line"></i>
-                          <span class="nav-text">Reportes/Estadísticas</span>
-                        </a> -->
+                  <i class="mdi mdi-chart-line"></i>
+                  <span class="nav-text">Reportes/Estadísticas</span>
+                </a> -->
               </li>
               <li class="has-sub active">
                 <a
@@ -148,7 +148,7 @@
                   data-parent="#sidebar-menu"
                 >
                   <div class="sub-menu">
-                    <li class="">
+                    <li>
                       <a
                         class="sidenav-item-link"
                         href="validacion-usuarios.html"
@@ -157,9 +157,18 @@
                       </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                       <a class="sidenav-item-link" href="validacion-os.html">
                         <span class="nav-text">Organizaciones Sindicales</span>
+                      </a>
+                    </li>
+
+                    <li class="active">
+                      <a
+                        class="sidenav-item-link"
+                        href="habilitacion-usuarios.html"
+                      >
+                        <span class="nav-text">Habilitación de Usuario</span>
                       </a>
                     </li>
                   </div>
@@ -202,7 +211,7 @@
               <span class="sr-only">Toggle navigation</span>
             </button>
 
-            <span class="page-title">Validacion de Organizacion</span>
+            <span class="page-title">HABILITACION DE USUARIOS</span>
 
             <div class="navbar-right">
               <!-- search form -->
@@ -681,7 +690,7 @@
             <!-- Dirigentes -->
             <div class="card card-default">
               <div class="card-header">
-                <h2>Organizaciones</h2>
+                <h2>Usuarios a habilitar</h2>
                 <!-- 
                 <a
                   class="btn mdi mdi-code-tags"
@@ -700,6 +709,16 @@
                   <i class="mdi mdi-file-excel mr-1"></i>
                   Descargar
                 </button>
+
+                <button
+                  type="button"
+                  class="btn btn-info btn-pill"
+                  data-toggle="modal"
+                  data-target="#exampleModalForm"
+                >
+                  <i class="mdi mdi-plus mr-1"></i>
+                  Nuevo
+                </button>
               </div>
               <div class="card-body">
                 <table
@@ -709,25 +728,30 @@
                 >
                   <thead>
                     <tr>
-                      <th>Organizacion</th>
-                      <th>Sigla</th>
-                      <th>Tipo de organizacion</th>
-                      <th>Ambito</th>
-                      <th>Sector</th>
-                      <th>Ente Matriz</th>
+                      <th>Foto</th>
+                      <th>Nombres</th>
+                      <th>Apellidos</th>
+                      <th>Ci</th>
+                      <th>Organizacion Sindical</th>
                       <th>Fecha Registro</th>
+
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td class="py-0">
+                        <img
+                          src="images/user/u-xl-12.jpg"
+                          alt="Product Image"
+                        />
+                      </td>
+                      <td>Juan Pedro</td>
+                      <td>Perez Flores</td>
+                      <td>2723424LP</td>
+                      <td>Eduardo Avaroa</td>
+                      <td>10/02/2020</td>
+
                       <td>
                         <div class="dropdown">
                           <a
@@ -748,21 +772,26 @@
                           >
                             <a
                               class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                              href="habilitar-usuario.html"
+                              >Habilitar</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td class="py-0">
+                        <img
+                          src="images/user/u-xl-12.jpg"
+                          alt="Product Image"
+                        />
+                      </td>
+                      <td>Rodrigo Fernando</td>
+                      <td>Mamani Quispe</td>
+                      <td>2723424LP</td>
+                      <td>Eduardo Avaroa</td>
+                      <td>10/02/2020</td>
+
                       <td>
                         <div class="dropdown">
                           <a
@@ -783,21 +812,26 @@
                           >
                             <a
                               class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                              href="habilitar-usuario.html"
+                              >Habilitar</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td class="py-0">
+                        <img
+                          src="images/user/u-xl-12.jpg"
+                          alt="Product Image"
+                        />
+                      </td>
+                      <td>Rodrigo Fernando</td>
+                      <td>Mamani Quispe</td>
+                      <td>2723424LP</td>
+                      <td>Eduardo Avaroa</td>
+                      <td>10/02/2020</td>
+
                       <td>
                         <div class="dropdown">
                           <a
@@ -818,21 +852,26 @@
                           >
                             <a
                               class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                              href="habilitar-usuario.html"
+                              >Habilitar</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td class="py-0">
+                        <img
+                          src="images/user/u-xl-12.jpg"
+                          alt="Product Image"
+                        />
+                      </td>
+                      <td>Rodrigo Fernando</td>
+                      <td>Mamani Quispe</td>
+                      <td>2723424LP</td>
+                      <td>Eduardo Avaroa</td>
+                      <td>10/02/2020</td>
+
                       <td>
                         <div class="dropdown">
                           <a
@@ -853,21 +892,26 @@
                           >
                             <a
                               class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                              href="habilitar-usuario.html"
+                              >Habilitar</a
                             >
                           </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Sindicato Eduardo Avaroa</td>
-                      <td>SEA</td>
-                      <td>Sindicato</td>
-                      <td>Publico</td>
-                      <td>Transporte</td>
-                      <td>DIRIGENTE PRINCIPAL DE LA ORGANIZACIÓN SINDICAL</td>
-                      <td>31/12/2023</td>
+                      <td class="py-0">
+                        <img
+                          src="images/user/u-xl-12.jpg"
+                          alt="Product Image"
+                        />
+                      </td>
+                      <td>Rodrigo Fernando</td>
+                      <td>Mamani Quispe</td>
+                      <td>2723424LP</td>
+                      <td>Eduardo Avaroa</td>
+                      <td>10/02/2020</td>
+
                       <td>
                         <div class="dropdown">
                           <a
@@ -888,8 +932,48 @@
                           >
                             <a
                               class="dropdown-item"
-                              href="kardex-dirigente.html"
-                              >Validar</a
+                              href="habilitar-usuario.html"
+                              >Habilitar</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="py-0">
+                        <img
+                          src="images/user/u-xl-12.jpg"
+                          alt="Product Image"
+                        />
+                      </td>
+                      <td>Rodrigo Fernando</td>
+                      <td>Mamani Quispe</td>
+                      <td>2723424LP</td>
+                      <td>Eduardo Avaroa</td>
+                      <td>10/02/2020</td>
+
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="dropdown-toggle icon-burger-mini"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-display="static"
+                          >
+                          </a>
+
+                          <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a
+                              class="dropdown-item"
+                              href="habilitar-usuario.html"
+                              >Habilitar</a
                             >
                           </div>
                         </div>
@@ -903,6 +987,166 @@
         </div>
 
         <!-- Footer -->
+      </div>
+    </div>
+
+    <!-- Form Modal -->
+    <!-- <button
+      type="button"
+      class="btn btn-info btn-pill"
+      data-toggle="modal"
+      data-target="#exampleModalForm"
+    >
+      Demo Modal
+    </button> -->
+
+    <div
+      class="modal fade"
+      id="exampleModalForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalFormTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalFormTitle">
+              Crear Usuario
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body" style="padding: 1rem 3rem">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nombres:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Apellidos:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Cedula de Identidad</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Celular:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"
+                  >Organizacion sindical:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"
+                  >Jefatura departamental:</label
+                >
+                <select class="country form-control">
+                  <option value="AL">La Paz</option>
+                  <option value="NY">Cochabamba</option>
+                  <option value="VR" selected>Chuquisaca</option>
+                  <option value="WA">Potosi</option>
+                  <option value="CA">Santa Cruz</option>
+                  <option value="WY">...</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="">Carnet escaneado:</label>
+                <div class="">
+                  <div class="custom-file mb-1">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="coverImage"
+                      required
+                    />
+                    <label class="custom-file-label" for="coverImage"
+                      >Elegir desde el ordenador...</label
+                    >
+                    <div class="invalid-feedback">
+                      Example invalid custom file feedback
+                    </div>
+                  </div>
+                  <span class="d-block"
+                    >Por favor subir su carnet escaneado
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Acta poder escaneado:</label>
+                <div class="">
+                  <div class="custom-file mb-1">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="coverImage"
+                      required
+                    />
+                    <label class="custom-file-label" for="coverImage"
+                      >Elegir desde el ordenador...</label
+                    >
+                    <div class="invalid-feedback">
+                      Example invalid custom file feedback
+                    </div>
+                  </div>
+                  <span class="d-block"
+                    >Por favor subir su acta poder escaneado
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger btn-pill"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary btn-pill">
+              Registrar
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1021,6 +1265,7 @@
     <script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
 
     <script src="plugins/apexcharts/apexcharts.js"></script>
+    <script src="plugins/select2/js/select2.min.js"></script>
 
     <script src="js/mono.js"></script>
     <script src="js/chart.js"></script>
